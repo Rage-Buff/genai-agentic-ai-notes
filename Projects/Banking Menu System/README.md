@@ -1,13 +1,14 @@
-# QR Code Generator
+# Basic Bank Menu System
 
-A simple Python project that generates a QR code for any URL and saves it as an image.
+A simple Python console application that simulates a bank customer portal using a menu-driven interface.
 
 ## Features
-- Generate QR codes from URLs
-- Save the QR code as a `.jpeg` file
-- Display the generated QR code
+- Balance enquiry
+- Raise a complaint
+- Submit customer feedback
+- View customer care contact
+- Exit the application
 
 ## Tech Stack
 - Python
-- qrcode
-- IPython Display
+- Random module
