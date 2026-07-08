@@ -1,8 +1,9 @@
 #QR code generator for a website
 import qrcode
-url="https://music.youtube.com/"
+url = input("Enter a URL: ")
+
 image = qrcode.make(url)
-image.save("music_qr.jpeg")
+image.save("qr_code.png")
 
 from IPython import display
-display.Image("music_qr.jpeg")
+display.Image("qr_code.png")
