@@ -1,0 +1,20 @@
+#Student Record Management System
+def srms(Student_count):
+  Data={"Name":[],"Age":[],"Course":[],"Gender":[],"Roll_no":[],"Address":[]}
+                #dictionary syntax ^
+  for i in range(Student_count):
+    for j in Data:
+      ans=input(f"Enter your {j}:")
+      Data[j].append(ans)
+
+    print(f"{i+1} record inserted succesfully")
+  
+  import pandas as pd
+  table= pd.DataFrame(Data)
+  display(Clear =True)
+  table.to_excel("Student_record.xlsx")
+
+  return table
+  
+number= int(input("Enter number of student:"))
+srms(number)
